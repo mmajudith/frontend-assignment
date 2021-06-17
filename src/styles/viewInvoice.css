@@ -1,0 +1,120 @@
+.invoices-container{
+    width: 100%;
+    height: 100%;
+    margin: 30px auto;
+}
+
+.month {
+    width: 95%;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 16px;
+    color: hsl(271, 36%, 24%);
+}
+
+.invoices-wrapper{
+    width: 95%;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.border{
+    padding: 20px 0px;
+    background-color: hsla(273, 44%, 90%, 0.89);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.cus-name,
+.cus-pay-date{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 5px;
+}
+
+.cus-name{
+    margin-bottom: 5px;
+    color: hsl(271, 36%, 24%);
+    font-weight: 700;
+}
+
+.green{
+    color: green;
+    font-weight: 700;
+}
+
+.crisom{
+    color: crimson;
+    font-weight: 700;
+}
+
+.yellow{
+    color:goldenrod;
+    font-weight: 700;
+}
+
+.search-wrapper{
+    width: 95%;
+    height: 100%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.input-wrapper{
+    width: 85%;
+}
+
+.input-wrapper input{
+    width: 100%;
+    padding: 15px 0px 15px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px rgba(0,0,0,.2)
+}
+
+.search-wrapper p{
+    width: 15%;
+    text-align: right;
+    line-height: 45px;
+    font-weight: 700;
+    font-size: 16px;
+    color: hsl(271, 36%, 24%);
+    cursor: pointer;
+}
+
+.new-btn{
+    width: 95%;
+    height: 40px;
+    margin: auto auto;
+    margin-bottom: 10px;
+}
+
+.new-btn button{
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: all 1s;
+    background: linear-gradient(
+        to left,
+        hsl(264, 100%, 61%),
+        hsl(293, 100%, 63%)
+    );
+}
+
+.new-btn button:hover{
+    cursor: pointer;
+    box-shadow: 0px 5px 5px #B70569;
+}
