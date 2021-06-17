@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/mmajudith/frontend-assignment/static/css/main.edb48474.chunk.css",
+    "main.js": "/mmajudith/frontend-assignment/static/js/main.35198d7b.chunk.js",
+    "main.js.map": "/mmajudith/frontend-assignment/static/js/main.35198d7b.chunk.js.map",
+    "runtime-main.js": "/mmajudith/frontend-assignment/static/js/runtime-main.42396f9e.js",
+    "runtime-main.js.map": "/mmajudith/frontend-assignment/static/js/runtime-main.42396f9e.js.map",
+    "static/js/2.a68c352a.chunk.js": "/mmajudith/frontend-assignment/static/js/2.a68c352a.chunk.js",
+    "static/js/2.a68c352a.chunk.js.map": "/mmajudith/frontend-assignment/static/js/2.a68c352a.chunk.js.map",
+    "static/js/3.956ca877.chunk.js": "/mmajudith/frontend-assignment/static/js/3.956ca877.chunk.js",
+    "static/js/3.956ca877.chunk.js.map": "/mmajudith/frontend-assignment/static/js/3.956ca877.chunk.js.map",
+    "index.html": "/mmajudith/frontend-assignment/index.html",
+    "static/css/main.edb48474.chunk.css.map": "/mmajudith/frontend-assignment/static/css/main.edb48474.chunk.css.map",
+    "static/js/2.a68c352a.chunk.js.LICENSE.txt": "/mmajudith/frontend-assignment/static/js/2.a68c352a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.42396f9e.js",
+    "static/js/2.a68c352a.chunk.js",
+    "static/css/main.edb48474.chunk.css",
+    "static/js/main.35198d7b.chunk.js"
+  ]
+}
