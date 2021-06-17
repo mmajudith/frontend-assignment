@@ -1,8 +1,9 @@
 import React from 'react'
 import Header from './Header'
 import Invoice from './Invoice'
-// import ViewInvoice from './viewInvoiceComponents/ViewInvoices'
+import ViewInvoice from './viewInvoiceComponents/ViewInvoices'
 import Footer from './Footer'
+import { Route } from 'react-router-dom'
 
 function AppBody({data}) {
   return (
@@ -10,8 +11,10 @@ function AppBody({data}) {
 
         <Header />
 
-        <Invoice data={data}/>
-        {/* <ViewInvoice /> */}
+        <Route exact path="/frontend-assignment">
+            <Invoice data={data}/>
+        </Route> 
+        <Route exact path="/frontend-assignment/viewInvoices" component={ViewInvoice}/>
 
         <Footer />
 

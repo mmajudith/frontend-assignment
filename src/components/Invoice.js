@@ -1,5 +1,6 @@
 import React from 'react'
 import InvoiceAddress from './InvoiceAddress'
+import { Link } from 'react-router-dom'
 
 function Invoice({data}) {
   return (
@@ -52,10 +53,10 @@ function Invoice({data}) {
 
         <div className="buttons-wrapper">
             <div className="send-wrapper">
-                <button className="send">send invoice</button>
+               <Link to="/frontend-assignment/viewInvoices"><button className="send">send invoice</button></Link>
             </div>
             <div className="view-wrapper">
-                <button className="view">view invoices</button>
+                <Link to="/frontend-assignment/viewInvoices"><button className="view">view invoices</button></Link>
             </div>    
         </div>
         
