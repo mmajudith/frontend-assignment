@@ -13,7 +13,7 @@ function Invoice({data}) {
                 <tr>
                     <th className="left">item</th>
                     <th className="left">Description</th>
-                    <th className="right">Qty</th>
+                    <th className="center">Qty</th>
                     <th className="center">Price</th>
                     <th className="right">Amount</th>
                 </tr>
@@ -26,7 +26,7 @@ function Invoice({data}) {
                             <tr key={id}>
                                 <td className="left">{el.item}</td>
                                 <td className="left">{el.description}</td>
-                                <td className="right">{el.Qty}</td>
+                                <td className="center">{el.Qty}</td>
                                 <td className="center">${el.price}</td>
                                 <td className="right">${el.amount}</td>
                             </tr>

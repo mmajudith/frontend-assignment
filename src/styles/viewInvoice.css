@@ -118,3 +118,15 @@
     cursor: pointer;
     box-shadow: 0px 5px 5px #B70569;
 }
+
+@media screen and (max-width: 500px){
+
+    .input-wrapper input{
+        padding: 12px 0px 12px 20px;
+    }
+    .search-wrapper p{
+        width: 15%;
+        line-height: 45px;
+        font-size: 14px;
+    }
+}

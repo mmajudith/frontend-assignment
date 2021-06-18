@@ -146,3 +146,63 @@ table tbody tr:nth-child(even){
         hsl(264, 100%, 61%)
     );
 }
+
+@media screen and (max-width: 768px) {
+    
+    .flex .note-wrapper{
+        width: 65%;
+    }
+
+    .flex .total-wrapper{
+        width: 35%;
+    }
+
+    .note, .total{
+        margin-bottom: 15px;
+    }
+
+    .send,
+    .view{
+        font-size: 14px;
+    }
+
+  }
+
+@media screen and (max-width: 520px) {
+
+    table thead tr th{
+        font-size: 14px;
+        width: 20%;
+    }
+    
+    table thead tr th:nth-child(1){
+        width: 25%;
+    }
+    
+    table thead tr th:nth-child(2){
+        width: 35%;
+    }
+
+
+}
+
+@media screen and (max-width: 375px) {
+
+    table{
+        font-size: 12px;
+    }
+
+    table thead tr th{
+        font-size: 12px;
+        width: 20%;
+    }
+
+    .total-wrapper.note-wrapper{
+        font-size: 13px;
+    }
+    
+    .note, .total{
+        font-size: 14px;
+    }
+    
+}

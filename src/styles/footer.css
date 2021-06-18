@@ -35,3 +35,23 @@ footer{
 .footer-wrapper .invoice .img {
     color:  hsl(271, 36%, 24%);
 }
+
+@media screen and (max-width: 768px){
+    .footer-wrapper p{
+        font-size: 14px;
+    }
+
+    .footer-wrapper .img{
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .footer-wrapper p{
+        font-size: 12px;
+    }
+
+    .footer-wrapper .img{
+        font-size: 30px;
+    }
+}
