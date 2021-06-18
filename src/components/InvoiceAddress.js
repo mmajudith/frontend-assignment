@@ -5,31 +5,33 @@ function InvoiceAddress() {
     <div className="address-wrapper">
 
         <p className="bill">Bill To:</p>
-        
-        <div className="comp">
-            <p>Company</p>
-            <p>CodeAfri</p>
-        </div>
+        <form className="address">
 
-        <div className="email">
-            <p>Email</p>
-            <p>info@codeafri.org</p>
-        </div>
+            <div className="invoNo">
+                <p>Invoice No</p>
+                <p>#2000098</p>
+            </div>
 
-        <div className="invoNo">
-            <p>Invoice No</p>
-            <p>2000098</p>
-        </div>
+            <div className="comp">
+                <label>Company *</label><br></br>
+                <input type="text"/>
+            </div>
 
-        <div className="invoDa">
-            <p>Invoice Date</p>
-            <p>26/05/2021</p>
-        </div>
+            <div className="email">
+                <label>Email *</label><br></br>
+                <input type="email"/>
+            </div>
 
-        <div className="invoDue">
-            <p>Due Date</p>
-            <p>6/05/2021</p>
-        </div>
+            <div className="invoDa">
+                <label>Invoice Date *</label><br></br>
+                <input type="date"/>
+            </div>
+
+            <div className="invoDue">
+                <label>Due Date *</label><br></br>
+                <input type="date"/>
+            </div>
+        </form>
 
     </div>
   )

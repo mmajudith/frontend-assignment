@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function ViewInvoices() {
   return (
@@ -52,7 +53,7 @@ function ViewInvoices() {
         </div>
 
         <div className="new-btn">
-            <button>New Invoice</button>
+           <Link to="/frontend-assignment"><button>Create New Invoice</button></Link> 
         </div>
 
     </div>

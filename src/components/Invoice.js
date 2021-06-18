@@ -2,63 +2,76 @@ import React from 'react'
 import InvoiceAddress from './InvoiceAddress'
 import { Link } from 'react-router-dom'
 
-function Invoice({data}) {
+function Invoice() {
   return (
-    <div className="generated-invoice">
+    <div className="generate-invoice">
         
         <InvoiceAddress />
 
-        <table>
-            <thead>
-                <tr>
-                    <th className="left">item</th>
-                    <th className="left">Description</th>
-                    <th className="center">Qty</th>
-                    <th className="center">Price</th>
-                    <th className="right">Amount</th>
-                </tr>
-            </thead>
-            
-            <tbody>
-                {
-                    data.map((el,id) =>{
-                        return(
-                            <tr key={id}>
-                                <td className="left">{el.item}</td>
-                                <td className="left">{el.description}</td>
-                                <td className="center">{el.Qty}</td>
-                                <td className="center">${el.price}</td>
-                                <td className="right">${el.amount}</td>
-                            </tr>
-                        )
-                    })
-                }
-                
-            </tbody>
-        </table>
+        <form >
 
-        <div className="flex">
+            <div className="input-fields-wrapper">
+                <div className="item">
+                    <label>Item</label><br/>
+                    <input type="text"/><br />
+                    <input type="text"/><br />
+                    <input type="text"/><br />
+                    <input type="text"/><br />
+                    <input type="text"/><br />
+                </div>
+
+                <div className="qty">
+                    <label>Qty</label><br/>
+                    <input type="number"/><br />
+                    <input type="number"/><br />
+                    <input type="number"/><br />
+                    <input type="number"/><br />
+                    <input type="number"/><br />
+                </div>
+
+                <div className="price">
+                    <label>Price</label><br/>
+                    <input type="number"/><br/>
+                    <input type="number"/><br/>
+                    <input type="number"/><br/>
+                    <input type="number"/><br/>
+                    <input type="number"/><br/>
+                </div>
+
+                <div className="amount">
+                    <label>Amount</label><br/>
+                    <input type="number"/><br/>
+                    <input type="number"/><br/>
+                    <input type="number"/><br/>
+                    <input type="number"/><br/>
+                    <input type="number"/><br/>
+                </div>
+            </div>
+
+            <div className="flex">
             <div className="note-wrapper">
                 <p className="note">Notes:</p>
                 <p>Thanks for your patronage. Use the bank details attached to 
-                    this mail to make a payment.
+                    this mail to make your payment.
                 </p>
             </div>
 
             <div className="total-wrapper">
-                <p className="total">Total</p>
-                <p className="sum">$2430.00</p>
+                <label className="total">Total</label><br/>
+                <input type="number"/>
             </div>
-        </div>
+            </div>
 
-        <div className="buttons-wrapper">
-            <div className="send-wrapper">
-               <Link to="/frontend-assignment/viewInvoices"><button className="send">send invoice</button></Link>
+            <div className="buttons-wrapper">
+                <div className="send-wrapper">
+                <Link to="/frontend-assignment/viewInvoices"><button className="send">send invoice</button></Link>
+                </div>
+                <div className="view-wrapper">
+                    <Link to="/frontend-assignment/viewInvoices"><button className="view">view invoices</button></Link>
+                </div>    
             </div>
-            <div className="view-wrapper">
-                <Link to="/frontend-assignment/viewInvoices"><button className="view">view invoices</button></Link>
-            </div>    
-        </div>
+            
+        </form>
         
     </div>
   )
