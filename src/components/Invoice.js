@@ -2,7 +2,7 @@ import React from 'react'
 import InvoiceAddress from './InvoiceAddress'
 import { Link, useHistory } from 'react-router-dom'
 
-function Invoice({setData}) {
+function Invoice({addData}) {
 
     const  history  = useHistory();
 
@@ -19,7 +19,7 @@ function Invoice({setData}) {
         let date = e.target.elements.date.value;
         let isPaid = "outstanding";
         let send = "send";
-        let addData = {
+        let data = {
             name,
             totalAmount,
             date,
@@ -27,10 +27,7 @@ function Invoice({setData}) {
             send
         }
 
-        setData((prev)=>{
-            return [...prev, addData]
-        });
-
+        addData(data);
         goBackHandler();
 
     }

@@ -33,3 +33,8 @@ You should use the following tools to accomplish this task:
 If you have any questions, please ask!
 
 To complete your assignment, please fork this repo and commit your work to your fork. When you are ready for us to look at it, give us access to your fork so we can review and run it.
+
+# Important Links:
+
+https://mmajudith.github.io/frontend-assignment/
+https://github.com/mmajudith/frontend-assignment

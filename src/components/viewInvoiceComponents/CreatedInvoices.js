@@ -35,7 +35,11 @@ function CreatedInvoices({data}) {
                                 </div>
                             </div>
                             <div className="send-btn-wrapper">
-                                <button className="send-btn">{el.send}</button>
+                                <button className="send-btn" onClick={()=> {
+                                     {el.isPaid === "paid" ? alert("Message Sent Successfully"): 
+                                     el.isPaid === "due" ? alert("The invoice is due please consider making payment immediately with the bank details attach to the email send to you.") :
+                                     alert("Please use the bank details attached to the email send to you to make your payment")}
+                                }}>{el.send}</button>
                             </div>
                         </div>
                     )

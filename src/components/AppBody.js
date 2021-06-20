@@ -10,6 +10,10 @@ function AppBody() {
 
     const [data, setData] = useState(state)
 
+    const addData = (newData) =>{
+      setData([newData, ...data])
+    }
+
   return (
     <div className="container">
 
@@ -19,7 +23,7 @@ function AppBody() {
           <CreatedInvoices data={data}/>
         </Route >
         <Route exact path="/frontend-assignment/invoices">
-          <Invoice setData={setData}/>
+          <Invoice addData={addData}/>
         </Route > 
 
         <Footer />
