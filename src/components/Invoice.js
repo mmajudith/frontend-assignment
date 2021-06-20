@@ -1,23 +1,53 @@
 import React from 'react'
 import InvoiceAddress from './InvoiceAddress'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 
-function Invoice() {
-  return (
-    <div className="generate-invoice">
+function Invoice({setData}) {
+
+    const  history  = useHistory();
+
+    const goBackHandler = () =>{
+        history.goBack()
+      }
+
+    const addInvoiceHandler = (e)=>{
         
-        <InvoiceAddress />
+        e.preventDefault()
 
-        <form >
+        let name = e.target.elements.name.value;
+        let totalAmount = e.target.elements.total.value;
+        let date = e.target.elements.date.value;
+        let isPaid = "outstanding";
+        let send = "send";
+        let addData = {
+            name,
+            totalAmount,
+            date,
+            isPaid,
+            send
+        }
 
+        setData((prev)=>{
+            return [...prev, addData]
+        });
+
+        goBackHandler();
+
+    }
+
+  return (
+    <div className="generate-invoice">  
+
+        <form onSubmit={addInvoiceHandler}>
+            <InvoiceAddress />
             <div className="input-fields-wrapper">
                 <div className="item">
                     <label>Item</label><br/>
-                    <input type="text"/><br />
-                    <input type="text"/><br />
-                    <input type="text"/><br />
-                    <input type="text"/><br />
-                    <input type="text"/><br />
+                    <input type="text" /><br />
+                    <input type="text" /><br />
+                    <input type="text" /><br />
+                    <input type="text" /><br />
+                    <input type="text" /><br />
                 </div>
 
                 <div className="qty">
@@ -58,16 +88,16 @@ function Invoice() {
 
             <div className="total-wrapper">
                 <label className="total">Total</label><br/>
-                <input type="number"/>
+                <input type="number" id="total"/>
             </div>
             </div>
 
             <div className="buttons-wrapper">
                 <div className="send-wrapper">
-                <Link to="/frontend-assignment/viewInvoices"><button className="send">send invoice</button></Link>
-                </div>
+                <button type="submit" className="send">Add invoice</button>
+            </div>
                 <div className="view-wrapper">
-                    <Link to="/frontend-assignment/viewInvoices"><button className="view">view invoices</button></Link>
+                    <Link to="/frontend-assignment"><button className="view">view invoices</button></Link>
                 </div>    
             </div>
             

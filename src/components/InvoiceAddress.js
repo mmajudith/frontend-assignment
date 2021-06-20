@@ -5,7 +5,6 @@ function InvoiceAddress() {
     <div className="address-wrapper">
 
         <p className="bill">Bill To:</p>
-        <form className="address">
 
             <div className="invoNo">
                 <p>Invoice No</p>
@@ -14,25 +13,23 @@ function InvoiceAddress() {
 
             <div className="comp">
                 <label>Company *</label><br></br>
-                <input type="text"/>
+                <input type="text" id="name"/>
             </div>
 
             <div className="email">
                 <label>Email *</label><br></br>
-                <input type="email"/>
+                <input type="email" />
             </div>
 
             <div className="invoDa">
                 <label>Invoice Date *</label><br></br>
-                <input type="date"/>
+                <input type="date" id="date"/>
             </div>
 
             <div className="invoDue">
                 <label>Due Date *</label><br></br>
-                <input type="date"/>
+                <input type="date" id="dueDate"/>
             </div>
-        </form>
-
     </div>
   )
 }

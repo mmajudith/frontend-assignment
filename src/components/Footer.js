@@ -36,10 +36,6 @@ function Footer() {
             </div>
         </div>
 
-        <div className="mouth-speak">
-            
-        </div>
-
     </footer>
   )
 }

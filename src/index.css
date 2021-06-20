@@ -3,7 +3,7 @@
 @import "./styles/footer.css";
 @import "./styles/invoice.css";
 @import "./styles/invoiceAddress.css";
-@import "./styles/viewInvoice.css";
+@import "./styles/createdInvoice.css";
 
 *{
     margin: 0;

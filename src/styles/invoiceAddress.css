@@ -16,12 +16,6 @@
     text-transform: uppercase;
 }
 
-form{
-    width: 100%;
-    height: 100%;
-    margin: auto;
-}
-
 .comp,
 .email,
 .invoNo,
@@ -39,7 +33,7 @@ form{
     font-weight: 700;
 }
 
-.address-wrapper form input{
+.address-wrapper  input{
     border: none;
     outline: none;
     padding: 5px;
